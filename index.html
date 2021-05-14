@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patron observador</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="counter"></div>
+
+    <div class="input-container">
+      <div>
+        Entrada 1:
+        <input id="input1" class="input" />
+      </div>
+
+      <div>
+        Entrada 2:
+        <input id="input2" class="input" value="random initial value" />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container-caja">
+        <h3>Caja 1</h3>
+        <textarea placeholder="caja 1" readonly class="caja-1"></textarea>
+      </div>
+
+      <div class="container-caja">
+        <h3>Caja 2</h3>
+        <textarea placeholder="caja 2" readonly class="caja-2"></textarea>
+      </div>
+
+      <div class="container-caja">
+        <h3>Caja 3</h3>
+        <textarea placeholder="caja 3" readonly class="caja-3"></textarea>
+      </div>
+    </div>
+
+    <div class="buttons-container">
+      <button id="changeToEntry1">Sincronizar las cajas a la entrada 1</button>
+      <button id="changeToEntry2">Sincronizar las cajas a la entrada 2</button>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
